@@ -318,7 +318,7 @@ L Device:C C6
 U 1 1 5E25FEB8
 P 1800 4300
 F 0 "C6" H 1915 4346 50  0000 L CNN
-F 1 "180n" H 1850 4150 50  0000 L CNN
+F 1 "18n" H 1850 4150 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 1838 4150 50  0001 C CNN
 F 3 "~" H 1800 4300 50  0001 C CNN
 	1    1800 4300
@@ -2239,7 +2239,7 @@ Wire Wire Line
 Wire Wire Line
 	5750 5400 4950 5400
 $Comp
-L Device:C C41
+L Device:CP C41
 U 1 1 5ED39C79
 P 6700 5000
 F 0 "C41" H 6815 5046 50  0000 L CNN
@@ -2247,18 +2247,12 @@ F 1 "1u" H 6815 4955 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 6738 4850 50  0001 C CNN
 F 3 "~" H 6700 5000 50  0001 C CNN
 	1    6700 5000
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
-Wire Wire Line
-	6700 5400 6700 5150
 Text GLabel 6800 4800 2    50   UnSpc ~ 0
 Right_Front_OUT
-Wire Wire Line
-	6700 4850 6700 4800
-Wire Wire Line
-	6700 4800 6800 4800
 $Comp
-L Device:C C40
+L Device:CP C40
 U 1 1 5ED89E67
 P 6400 4850
 F 0 "C40" H 6515 4896 50  0000 L CNN
@@ -2266,24 +2260,12 @@ F 1 "1u" H 6515 4805 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 6438 4700 50  0001 C CNN
 F 3 "~" H 6400 4850 50  0001 C CNN
 	1    6400 4850
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
-Wire Wire Line
-	6300 5400 6300 5050
-Wire Wire Line
-	6300 5050 6400 5050
-Wire Wire Line
-	6400 5050 6400 5000
-Wire Wire Line
-	6400 4700 6450 4700
-Wire Wire Line
-	6450 4700 6450 4600
-Wire Wire Line
-	6450 4600 6400 4600
 Text GLabel 6400 4600 0    50   UnSpc ~ 0
 Left_Front_OUT
 $Comp
-L Device:C C42
+L Device:CP C42
 U 1 1 5EE78A22
 P 6650 6550
 F 0 "C42" H 6765 6596 50  0000 L CNN
@@ -2304,7 +2286,7 @@ Wire Wire Line
 Wire Wire Line
 	6650 6800 6650 6700
 $Comp
-L Device:C C43
+L Device:CP C43
 U 1 1 5EEDCAFD
 P 5850 7050
 F 0 "C43" H 5965 7096 50  0000 L CNN
@@ -2566,4 +2548,16 @@ Wire Wire Line
 	650  2450 650  2850
 Wire Wire Line
 	650  2850 850  2850
+Wire Wire Line
+	6700 5400 6700 5150
+Wire Wire Line
+	6700 4850 6700 4800
+Wire Wire Line
+	6700 4800 6800 4800
+Wire Wire Line
+	6400 5000 6300 5000
+Wire Wire Line
+	6300 5000 6300 5400
+Wire Wire Line
+	6400 4700 6400 4600
 $EndSCHEMATC
